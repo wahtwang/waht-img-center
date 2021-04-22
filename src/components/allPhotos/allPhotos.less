@@ -1,0 +1,54 @@
+@import '~css/const';
+.allPhotos {
+  height: 100%;
+  overflow: scroll;
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    padding: 20px;
+    .imgState {
+      flex: 2;
+
+      .imgDate {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      .position {
+        font-size: 14px;
+        margin-top: 4px;
+      }
+    }
+    .palette {
+      flex: 1;
+    }
+  }
+  .container {
+    overflow: hidden;
+    .imgBox {
+      display: flex;
+      overflow: scroll;
+      width: 100%;
+      flex-wrap: wrap;
+      align-content: flex-end;
+      .img {
+        flex: none;
+        width: 75px;
+        height: 75px;
+        padding: 1px;
+        background-color: white;
+        background-clip: content-box;
+      }
+    }
+    .describe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.input {
+  height: 42px;
+  width: 300px;
+  position: relative;
+  display: inline-block;
+  input {
+    height: inherit;
+    width: inherit;
+    border-radius: 21px;
+    font-size: 21px;
+    padding: 0 21px 0 47px;
+    color: #aaa;
+    background-color: rgb(32, 33, 36);
+  }
+  input::placeholder {
+    color: #333;
+    letter-spacing: 3px;
+  }
+  .iconBox {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    left: 4px;
+    height: 42px;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

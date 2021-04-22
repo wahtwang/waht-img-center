@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "module": "ESNext",
+    "baseUrl": ".",
+    "paths": { "#/*": ["./src/components/*"], "@/*": ["./src/*"], "css/*": ["./src/css/*"], "img/*": ["./src/imgs/*"], "lib/*": ["./src/lib/*"] }
+  },
+  "include": ["./src/**/*"]
+}

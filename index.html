@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>wahtImg</title>
+  </head>
+  <body>
+    <script>
+      // 手动更改viewport的缩放,并配置默认字体大小
+      ;(function () {
+        const meta = [].find.call(document.querySelectorAll('meta'), (val) => val.getAttribute('name') === 'viewport')
+        const initScaleConfig = 'initial-scale = ' + 1 / window.devicePixelRatio
+        if (meta) {
+          meta.setAttribute('content', initScaleConfig)
+        } else {
+          const newMeat = document.createElement('meta')
+          const head = document.querySelector('head')
+          newMeat.setAttribute('name', 'viewport')
+          newMeat.setAttribute('content', initScaleConfig)
+          head.appendChild(newMeat)
+        }
+        document.querySelector('body').style.fontSize = (12 / 375) * 100 + 'vw'
+      })()
+    </script>
+    <div id="app"></div>
+  </body>
+</html>
